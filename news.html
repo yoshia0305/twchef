@@ -294,4 +294,57 @@ href="restaurant/r-1.html" target="_blank"></A>--> </div>
     <td width="20" align="left" valign="top" bgcolor="#FFFFFF">&nbsp;</td>
   </tr>
 </table>
-<!-----
+<map name="Map2" id="Map2">
+  <area shape="rect" coords="204,226,315,261" href="aboutus.html" />
+  <area shape="rect" coords="322,228,434,258" href="product-1/products1.html" />
+  <area shape="rect" coords="441,230,545,257" href="news.html" />
+  <area shape="rect" coords="554,231,631,258" href="QandA.html" />
+  <area shape="rect" coords="643,230,745,257" href="mailto:tw.kitchen@msa.hinet.net" />
+  <area shape="rect" coords="750,232,845,256" href="shoping.html" />
+  <area shape="rect" coords="747,16,836,41" href="index.html" />
+  <area shape="rect" coords="840,16,892,40" href="#" />
+  <area shape="rect" coords="900,15,946,40" href="#" />
+</map>
+<!-------JavaScript浮在固定位置的圖示 end-------->
+<SCRIPT language=JavaScript1.2> 
+<!-- 
+// Watermark script by Paul Anderson, CNET Builder.com. All rights reserved. 
+markW = 10; // 
+markH = 10; // 
+markX = 90; // 改變位置
+markY = 2; // 改變位置
+markRefresh = 20; // 
+// set common object reference 
+if (!document.all) document.all = document; 
+if (!document.all.waterMark.style) document.all.waterMark.style = 
+document.all.waterMark; 
+wMark = document.all.waterMark.style; 
+wMark.width = markW; 
+wMark.height = markH; 
+navDOM = window.innerHeight; // Nav DOM flag 
+function setVals() { 
+barW = 0; // scrollbar compensation for PC Nav 
+barH = 0; 
+if (navDOM) { 
+if (document.height > innerHeight) barW = 10; 
+if (document.width > innerWidth) barH = 20; 
+} else { 
+innerWidth = document.body.clientWidth; 
+innerHeight = document.body.clientHeight; 
+} 
+posX = ((innerWidth - markW)-barW) * (markX/100); 
+posY = ((innerHeight - markH)-barH) * (markY/100); 
+} 
+function wRefresh() { 
+wMark.left = posX + (navDOM?pageXOffset:document.body.scrollLeft); 
+wMark.top = posY + (navDOM?pageYOffset:document.body.scrollTop); 
+} 
+function markMe() { 
+setVals(); 
+window.onresize=setVals; 
+markID = setInterval ("wRefresh()",markRefresh); 
+} 
+window.onload=markMe; // safety for Mac IE4.5 
+//--> 
+</SCRIPT>
+</BODY></HTML>
